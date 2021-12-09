@@ -1,6 +1,4 @@
-const fetchCity = require('./geoCode.js');
+require('dotenv').config();
+const geoCode = require('./geoCode.js');
 
-
-fetchCity(process.argv[2]);
-
-
+geoCode(process.argv[2]);
